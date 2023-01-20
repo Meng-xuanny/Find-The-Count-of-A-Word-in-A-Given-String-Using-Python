@@ -1,0 +1,15 @@
+my_string = " Hello this is a beautiful world. \
+A world where everyone is happy and equal; \
+a world without hunger and discrimination; \
+an ideal world for all creatures."
+
+startIndex = 0
+count = 0
+for i in range (len(my_string)):
+  position = my_string.find('world', startIndex)
+  if position != -1:
+    startIndex = position + 1
+    count += 1
+    position = 0
+    
+print("The total count of the word 'world' is:", count)
